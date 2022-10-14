@@ -1,11 +1,11 @@
 # This workflow will build a Java project with Maven, and cache/restore any dependencies to improve the workflow execution time
 # For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
 
-name: Change to SUB
+name: Change to SUB 3 PM
 
 on:
   schedule:
-    - cron:  '30 11 * * *'   #5PM IST
+    - cron:  '30 09 * * *'   #3 pm IST
   workflow_dispatch:
 
 jobs:
@@ -22,4 +22,4 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build with Maven
-      run: mvn clean install -P change-settings -Dtest="MonitorTest#testOutputChangeToSUB"
+      run: mvn clean install -P change-settings -Dtest="MonitorTest#testOutputChangeToSUB3PM"

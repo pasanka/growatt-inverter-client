@@ -2,7 +2,7 @@ package model;
 
 public enum OutputMode {
 
-    SBU("0"), SUB("3");
+    SBU("0"), SUB("3"), SOL("1");
 
     private final String mode;
 
